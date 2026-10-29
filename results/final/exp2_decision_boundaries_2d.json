@@ -1,0 +1,74 @@
+{
+  "experiment_id": "Exp2_Decision_Boundaries_2D",
+  "model_type": "pegasos",
+  "gamma_rbf": 1.0,
+  "lambda_reg": 0.001,
+  "r_0": 1.436,
+  "bayes_risk": 0.06605478283906346,
+  "oracle_train_error": 0.05904761904761905,
+  "oracle_test_error": 0.051111111111111114,
+  "grid_resolution": 200,
+  "grid_bound": 2.0,
+  "D_list": [
+    5,
+    15,
+    50,
+    500
+  ],
+  "panels": [
+    {
+      "panel_key": "Linear_d2",
+      "title": "Linear Baseline ($d=2$)",
+      "D": null,
+      "train_error": 0.4419047619047619,
+      "test_error": 0.43777777777777777,
+      "gram_frobenius_rel": null,
+      "grid_score_rmse_vs_exact": 2.4288257433928213
+    },
+    {
+      "panel_key": "RFF_D5",
+      "title": "RFF + Linear ($D=5$)",
+      "D": 5,
+      "train_error": 0.38761904761904764,
+      "test_error": 0.36444444444444446,
+      "gram_frobenius_rel": 1.4795028206876477,
+      "grid_score_rmse_vs_exact": 2.3585426541240793
+    },
+    {
+      "panel_key": "RFF_D15",
+      "title": "RFF + Linear ($D=15$)",
+      "D": 15,
+      "train_error": 0.10857142857142857,
+      "test_error": 0.11333333333333333,
+      "gram_frobenius_rel": 0.7754075702766356,
+      "grid_score_rmse_vs_exact": 1.0612108747833064
+    },
+    {
+      "panel_key": "RFF_D50",
+      "title": "RFF + Linear ($D=50$)",
+      "D": 50,
+      "train_error": 0.06,
+      "test_error": 0.06888888888888889,
+      "gram_frobenius_rel": 0.3538685794209727,
+      "grid_score_rmse_vs_exact": 0.606151214241723
+    },
+    {
+      "panel_key": "RFF_D500",
+      "title": "RFF + Linear ($D=500$)",
+      "D": 500,
+      "train_error": 0.05904761904761905,
+      "test_error": 0.06444444444444444,
+      "gram_frobenius_rel": 0.17882797157704328,
+      "grid_score_rmse_vs_exact": 0.1804190922663508
+    },
+    {
+      "panel_key": "Exact_RBF_Kernel",
+      "title": "Exact RBF Kernel ($\\mathcal{H}_K, D=\\infty$)",
+      "D": null,
+      "train_error": 0.06095238095238095,
+      "test_error": 0.057777777777777775,
+      "gram_frobenius_rel": 0.0,
+      "grid_score_rmse_vs_exact": 0.0
+    }
+  ]
+}

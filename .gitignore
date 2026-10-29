@@ -1,0 +1,10 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.env
+tests/
+report/*
+!report/main.pdf
+!report/figures/*

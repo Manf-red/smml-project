@@ -1,0 +1,126 @@
+{
+  "quick": false,
+  "seed": 42,
+  "use_cv": true,
+  "config": {
+    "m_synthetic": 1500,
+    "cv_splits": 5,
+    "cv_pegasos_iters": 20000,
+    "num_seeds": 10,
+    "pegasos_iters": 20000,
+    "exp1_D_grid": [
+      5,
+      10,
+      25,
+      50,
+      100,
+      250,
+      500,
+      1000,
+      2000
+    ],
+    "exp2_D_list": [
+      5,
+      15,
+      50,
+      500
+    ],
+    "exp2_grid_resolution": 200,
+    "exp3_D_subset": [
+      25,
+      100,
+      500
+    ],
+    "exp4_D_grid": [
+      10,
+      20,
+      50,
+      100,
+      250,
+      500,
+      1000
+    ],
+    "exp4_P_grid": [
+      1,
+      2,
+      5,
+      10,
+      20,
+      50,
+      100,
+      200
+    ],
+    "exp5_D_grid": [
+      5,
+      10,
+      25,
+      50,
+      100,
+      250,
+      500,
+      1000,
+      2000
+    ],
+    "exp5_m_grid": [
+      250,
+      500,
+      1000,
+      2000,
+      4000,
+      6000
+    ],
+    "exp5_num_seeds": 3,
+    "exp5_pegasos_iters": 10000
+  },
+  "hyperparameters": {
+    "Synthetic_d2": {
+      "gamma_rbf": 1.0,
+      "gamma_laplacian": 1.0,
+      "lambda_svm": 0.001
+    },
+    "Digits_d64": {
+      "gamma_rbf": 0.015,
+      "gamma_laplacian": 0.02,
+      "lambda_svm": 0.0002
+    }
+  },
+  "stage_seconds": {
+    "datasets": 0.0066067740008293185,
+    "cross_validation": 32.25684753300084,
+    "experiment_1": 16.055598554001335,
+    "experiment_2": 2.3200431059995026,
+    "experiment_3": 32.875082801001554,
+    "experiment_4": 50.99340518999816,
+    "experiment_5": 8.190117244001158
+  },
+  "total_seconds": 142.69770120200337,
+  "outputs": {
+    "results": [
+      "/home/davide/Nextcloud/University/Statistical methods for ML/Project - Kernels and Random Feature Maps/results/final/hyperparameter_selection.json",
+      "/home/davide/Nextcloud/University/Statistical methods for ML/Project - Kernels and Random Feature Maps/results/final/exp1_convergence_vs_D.json",
+      "/home/davide/Nextcloud/University/Statistical methods for ML/Project - Kernels and Random Feature Maps/results/final/exp2_decision_boundaries_2d.json",
+      "/home/davide/Nextcloud/University/Statistical methods for ML/Project - Kernels and Random Feature Maps/results/final/exp3_bandwidth_effect.json",
+      "/home/davide/Nextcloud/University/Statistical methods for ML/Project - Kernels and Random Feature Maps/results/final/exp4_feature_map_comparison.json",
+      "/home/davide/Nextcloud/University/Statistical methods for ML/Project - Kernels and Random Feature Maps/results/final/exp5_runtime_vs_accuracy.json"
+    ],
+    "figures": [
+      "/home/davide/Nextcloud/University/Statistical methods for ML/Project - Kernels and Random Feature Maps/report/figures/fig1_convergence_vs_D.pdf",
+      "/home/davide/Work/SMML Project/vault/assets/fig_final_exp1_convergence_vs_D.png",
+      "/home/davide/Nextcloud/University/Statistical methods for ML/Project - Kernels and Random Feature Maps/report/figures/fig2_decision_boundaries_2d.pdf",
+      "/home/davide/Work/SMML Project/vault/assets/fig_final_exp2_decision_boundaries_2d.png",
+      "/home/davide/Nextcloud/University/Statistical methods for ML/Project - Kernels and Random Feature Maps/report/figures/fig3_bandwidth_gamma_effect.pdf",
+      "/home/davide/Work/SMML Project/vault/assets/fig_step9_exp3_bandwidth_effect.png",
+      "/home/davide/Nextcloud/University/Statistical methods for ML/Project - Kernels and Random Feature Maps/report/figures/fig4_feature_map_constructions.pdf",
+      "/home/davide/Work/SMML Project/vault/assets/fig_step9_exp4_feature_map_constructions.png",
+      "/home/davide/Nextcloud/University/Statistical methods for ML/Project - Kernels and Random Feature Maps/report/figures/fig5_runtime_vs_accuracy.pdf",
+      "/home/davide/Work/SMML Project/vault/assets/fig_step9_exp5_runtime_vs_D.png",
+      "/home/davide/Nextcloud/University/Statistical methods for ML/Project - Kernels and Random Feature Maps/report/figures/fig6_runtime_scaling_in_m.pdf",
+      "/home/davide/Work/SMML Project/vault/assets/fig_step9_exp5_runtime_vs_m.png"
+    ]
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "blas_threads_env": "1"
+  }
+}
